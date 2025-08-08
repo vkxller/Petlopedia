@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Petlopedia</title>
+    <link rel="stylesheet" href="./css/estilos.css" />
+    <script src="./js/script.js" defer></script>
+</head>
+
+<body> <!--Barra de navegacion Completa-->      
+    <nav class="navbar">
+        <div class="logo">  <!--En caso de apretar Petlopedia, este redirige a la pagina principal, auqneu solo hay pero, tiene logica.-->
+            <a href="./index.html">Petlopedia</a>
+        </div>  <!--El type nos incluye la x, para borrar busqueda, y place holder par aponer eun text een el input directamente-->
+        <input type="search" placeholder="Buscar" class="buscar"></input>
+        <div class="iniciarrsesion">
+            <button id="iniciar" class="botoniniciar">Iniciar Sesion</button>
+        </div>
+    </nav>
+
+<!--Padre del Padre-->
+    <main>
+    <!-- Containes es el contenedor principal de todos los containters-->
+        <div class="container">
+            <div class="animales">
+                <!--Bloque de gato-->
+                
+                <section class="sectiongato">
+                    <h1>Gato Atigrado</h1>
+                    <h3>sustantivo</h3>
+                    <h2>Plural. Gatos Atigrados.<br> Un Gato con un pelaje que presenta rayas, puntos o patrones en remolino,
+                    usualmente con una marca en forma de "M" en su frente</h2>
+                    <button class="botonlike" data-titulo="Gato Atigrado">20 me gusta</button>
+                </section>
+
+                <!--Bloque de Perro-->
+                <section class="sectionperro">
+                    <h1>Golden Retriever</h1>
+                    <h3>sustantivo</h3>
+                    <h2>Plural. Golden Retrievers.<br> Una raza de perro mística, inteligente y devota, conocida por su pelaje dorado y su habilidad para 
+                    recuperar objetos sin dañarlos</h2>
+                    <button class="botonlike" >15 me gusta</button>
+                </section>
+            </div>
+
+            <!--Bloque de Info-->
+            <div class="info">
+                <section>
+                    <h1>Petlopedia está definida por TI</h1>
+                    <h2>Agrega y edita artículos para ayudar a mantener esta enciclopedia de mascotas actualizada y llena de información valiosa para todos los amantes de los animales.</h2>
+                    <button id="agregarDefinicion" class="botonAgrega" data-titulo="Golden Retriever">Agregar Definicion</button>
+                </section>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

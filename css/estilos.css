@@ -1,0 +1,125 @@
+body {
+    width: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    justify-content: space-between;
+    align-items: center; 
+    display: flex;
+    height: 150px;
+    padding: 0 60px;
+    background-color: rgb(241, 205, 125);
+    color: #fff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.botoniniciar {
+    height: 50px;
+    width: 120px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #f0c14b;
+    font-weight: bold;
+}
+
+/*Titulo o logo principal*/
+.logo a {
+    text-shadow: 2px 2px 2px rgba(1, 1, 1, 1);
+    color: #cf9619;
+    text-decoration: none;
+    font-size: 55px;
+}
+.logo:hover{
+    transform: scale(1.10); 
+}
+
+main {
+    padding: 20px 60px;
+}
+
+.container {
+    display: flex;
+    gap: 120px;
+}
+
+/*Para que los 2 boques esten uno a bajo de otro y su espaciado*/
+.animales {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+
+.info {  /*Para que pueda pasar l bloque a la derecha */
+    align-items: flex-start;
+    flex: 1; /*Para mantener proporcionalidad*/
+    display: flex;
+}
+/*Este engloba a todos los bloques de main*/
+section { 
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/*Textos de cada section y sus separaciones*/
+h1 {
+    margin-top: 0;
+    color: #333;
+}
+
+h3 {
+    color: #666;
+    margin-top: 0;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+/*Botones like */
+
+.botonlike {
+    padding: 10px 20px;
+    background-color: #f0c14b;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/*Se cambio de clase el de agregar debido a que lo afectaba la alerta*/
+.botonAgrega{
+    padding: 10px 20px;
+    background-color: #f0c14b;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.botonAgrega:hover{
+    transform: scale(1.10);
+}
+.botonlike:hover{
+transform: scale(1.10);
+}
+
+/*Anmacion boton inciar y cerrar*/
+.botoniniciar:hover{
+    transform: scale(1.07);
+}
+
+/*Barra de busqueda*/
+.buscar{
+    height: 30px;
+    width: 1200px;
+    color: #000000;
+    background-color: #ffffff; /*Color fondo*/
+    border: 1px solid #000000; /*Color de texto*/
+    border-radius: 0px;
+}
+
