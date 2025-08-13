@@ -23,7 +23,7 @@ body {
 .botoniniciar {
     height: 50px;
     width: 120px;
-    cursor: pointer;
+    cursor: pointer; /*Para indicar que es Clickeanle en el pointer(mouse-flechita)*/
     border: none;
     border-radius: 4px;
     background-color: #f0c14b;
@@ -36,6 +36,7 @@ body {
     color: #cf9619;
     text-decoration: none;
     font-size: 55px;
+    cursor: pointer;
 }
 .logo:hover{
     transform: scale(1.10); 
@@ -95,6 +96,7 @@ h2 {
     border: none;
     border-radius: 4px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 /*Se cambio de clase el de agregar debido a que lo afectaba la alerta*/
@@ -104,6 +106,7 @@ h2 {
     border: none;
     border-radius: 4px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .botonAgrega:hover{
@@ -120,6 +123,7 @@ transform: scale(1.10);
 
 /*Barra de busqueda*/
 .buscar{
+    cursor: pointer;
     height: 30px;
     width: 1200px;
     color: #000000;
