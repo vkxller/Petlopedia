@@ -31,8 +31,8 @@ botonesLike.forEach(boton => {
         // Obtiene el título desde el atributo data-titulo
         const titulo = this.getAttribute("data-titulo");
         
-        // Muestrsa la alerta con el título
-        alert("¡Te gustó la definición de: " + titulo);
+        // Muestra la alerta con el título
+        alert("¡Te gustó la definición de: " + titulo + "!");
         
         // Incrementa el contador de likes
         this.textContent = (parseInt(this.textContent) + 1) + " me gusta";
