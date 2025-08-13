@@ -35,7 +35,6 @@ botonesLike.forEach(boton => {
         alert(`¡Te gustó la definición de: ${titulo}`);
         
         // Incrementa el contador de likes
-        const contador = parseInt(this.textContent.match(/\d+/)[0]);
-        this.textContent = `${contador + 1} me gusta`;
+        this.textContent = `${parseInt(this.textContent) + 1} me gusta`;
     });
 });
