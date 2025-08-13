@@ -24,17 +24,17 @@ document.getElementById("agregarDefinicion").addEventListener("click", function(
 });
 
 // Selecciona todos los botones de "Me gusta"
-const botonesLike = document.querySelectorAll('.botonlike');
+const botonesLike = document.querySelectorAll(".botonlike");
 // Agrega el evento click a cada botón
 botonesLike.forEach(boton => {
-    boton.addEventListener('click', function() {
+    boton.addEventListener("click", function() {
         // Obtiene el título desde el atributo data-titulo
-        const titulo = this.getAttribute('data-titulo');
+        const titulo = this.getAttribute("data-titulo");
         
         // Muestrsa la alerta con el título
-        alert(`¡Te gustó la definición de: ${titulo}`);
+        alert("¡Te gustó la definición de: " + titulo);
         
         // Incrementa el contador de likes
-        this.textContent = `${parseInt(this.textContent) + 1} me gusta`;
+        this.textContent = (parseInt(this.textContent) + 1) + " me gusta";
     });
 });
